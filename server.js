@@ -1,7 +1,7 @@
 const http = require('http');
 const express = require('express');
 const bodyParsar = require('body-parser');
-
+   
 const app =express();
 // here we are just importing the routes form the admin js 
 const adminRouter = require('./routes/admin')
@@ -19,6 +19,7 @@ app.use(shopRouter);
 //     next();
 // })
 
+  console.log("This is the type of the everer")
   app.use(bodyParsar.urlencoded({extended : false}));
 
 // app.use('/add-product',(req,res,next) => {
