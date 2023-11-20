@@ -30,4 +30,5 @@ router.post('/add-product',(req,res,next) => {
 res.redirect('/');
 });
 
+console.log("This is the basic string")
 module.exports = router;
